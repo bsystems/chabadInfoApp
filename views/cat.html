@@ -1,0 +1,34 @@
+<style>
+	.img-frame{padding-left:15px;}
+</style>
+<div class="row-fluid">
+
+
+
+	<div class="col-sm-6" ng-repeat="newsItem in headers">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4 class="widget-title lighter smaller" ng-bind-html="newsItem.title">
+													<i class="ace-icon fa fa-comment blue"></i>
+													 
+												</h4>
+											</div>
+
+											<div class="widget-body ">
+											
+												<div class="widget-main">
+													<div class="row">
+														<img class="col-sm-6" ng-src="http://www.chabad.info/n/image_gen/?&lo=none&l=news&h=120&w=160&id={{newsItem.ioriginal}}" />
+														<div class="col-sm-6" ng-bind-html="newsItem.news"></div>
+													</div>
+													
+												</div><!-- /.widget-main -->
+											</div><!-- /.widget-body -->
+										</div><!-- /.widget-box -->
+	</div><!-- /.col -->
+
+								
+</div>
+
+
+											
